@@ -1,1 +1,137 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
+body{
+  font-family:'Poppins',sans-serif;
+  background:#050505;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  overflow:hidden;
+}
+
+/* CONTAINER */
+
+.auth-container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* CARD */
+
+.auth-card{
+  width:100%;
+  max-width:420px;
+
+  background:rgba(255,255,255,0.06);
+
+  backdrop-filter:blur(18px);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:30px;
+
+  padding:45px 30px;
+
+  box-shadow:
+    0 0 40px rgba(212,175,55,0.15);
+
+  color:white;
+}
+
+/* TITLE */
+
+.auth-card h1{
+  text-align:center;
+  color:#F5D061;
+  margin-bottom:10px;
+  font-size:2rem;
+}
+
+/* SUBTITLE */
+
+.subtitle{
+  text-align:center;
+  color:#bdbdbd;
+  margin-bottom:35px;
+}
+
+/* FORM */
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+/* INPUT */
+
+input{
+  width:100%;
+
+  padding:16px;
+
+  border:none;
+
+  border-radius:16px;
+
+  background:rgba(255,255,255,0.08);
+
+  color:white;
+
+  font-size:1rem;
+
+  outline:none;
+}
+
+input::placeholder{
+  color:#bdbdbd;
+}
+
+/* BUTTON */
+
+button{
+  width:100%;
+
+  padding:16px;
+
+  border:none;
+
+  border-radius:18px;
+
+  background:#D4AF37;
+
+  color:black;
+
+  font-size:1rem;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+button:hover{
+  transform:translateY(-3px);
+}
+
+/* BOTTOM TEXT */
+
+.bottom-text{
+  text-align:center;
+  margin-top:25px;
+  color:#bdbdbd;
+}
+
+.bottom-text a{
+  color:#F5D061;
+  text-decoration:none;
+  }
