@@ -21,27 +21,26 @@ signupForm.addEventListener(
 
     const name =
       document.getElementById(
-        "name"
+        "signupName"
       ).value;
 
     const email =
       document.getElementById(
-        "email"
+        "signupEmail"
       ).value;
 
     const password =
       document.getElementById(
-        "password"
+        "signupPassword"
       ).value;
 
     try{
 
-      const userCredential =
-        await createUserWithEmailAndPassword(
-          auth,
-          email,
-          password
-        );
+      await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
 
       localStorage.setItem(
         "nirvaUser",
@@ -63,6 +62,8 @@ signupForm.addEventListener(
     catch(error){
 
       alert(error.message);
+
+      console.log(error);
 
     }
 
