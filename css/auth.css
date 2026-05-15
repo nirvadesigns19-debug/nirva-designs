@@ -135,3 +135,79 @@ button:hover{
   color:#F5D061;
   text-decoration:none;
   }
+
+/* DASHBOARD */
+
+.dashboard-container{
+
+  width:100%;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding:20px;
+}
+
+.dashboard-card{
+
+  width:100%;
+
+  max-width:450px;
+
+  background:
+    rgba(255,255,255,0.06);
+
+  backdrop-filter:blur(18px);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius:30px;
+
+  padding:50px 35px;
+
+  box-shadow:
+    0 0 40px rgba(212,175,55,0.15);
+
+  text-align:center;
+
+  color:white;
+}
+
+.dashboard-card h1{
+
+  font-size:2rem;
+
+  margin-bottom:20px;
+
+  line-height:1.4;
+}
+
+#userName{
+  color:#F5D061;
+}
+
+.dashboard-card p{
+
+  color:#bdbdbd;
+
+  margin-bottom:35px;
+
+  line-height:1.8;
+}
+
+.enter-btn{
+
+  margin-bottom:18px;
+}
+
+.logout-btn{
+
+  background:
+    rgba(255,255,255,0.08);
+
+  color:#ff8080;
+  }
