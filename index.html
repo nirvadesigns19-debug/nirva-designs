@@ -9,22 +9,28 @@
 
   <title>NIRVA DESIGNS</title>
 
-  <!-- CSS -->
   <link rel="stylesheet"
         href="css/style.css">
 
   <link rel="stylesheet"
         href="css/responsive.css">
 
-  <!-- FONT -->
   <link rel="preconnect"
         href="https://fonts.googleapis.com">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
 </head>
+
 <body>
+
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
 
   <!-- NAVBAR -->
 
@@ -49,7 +55,7 @@
       </a>
 
       <a href="#custom">
-        Custom Gifts
+        Customize
       </a>
 
     </nav>
@@ -57,16 +63,14 @@
     <div class="nav-right">
 
       <div class="user-box">
-        👋 <span id="navUser"></span>
+        ✨ <span id="navUser"></span>
       </div>
 
       <button id="cartBtn"
               class="cart-btn">
 
         Cart
-        <span id="cartCount">
-          0
-        </span>
+        <span id="cartCount">0</span>
 
       </button>
 
@@ -88,22 +92,18 @@
 
     <div class="hero-content">
 
-      <p class="small-text">
-        PREMIUM PERSONALIZED GIFTS
+      <p class="hero-tag">
+        PREMIUM CUSTOMIZED GIFTS
       </p>
 
       <h1>
-        Turn Memories Into
-        <span>Luxury Acrylic Art</span>
+        Turn Your Memories Into
+        <span>Luxury Acrylic Art ✨</span>
       </h1>
 
       <p class="hero-description">
-        Premium custom acrylic frames,
-        anime posters,
-        music plaques,
-        couple gifts,
-        god frames,
-        birthday gifts and more.
+        Personalized acrylic frames, anime posters, music plaques,
+        premium couple gifts and cinematic wall art designed for unforgettable memories.
       </p>
 
       <div class="hero-buttons">
@@ -113,8 +113,27 @@
         </button>
 
         <button class="outline-btn">
-          Create Custom Gift
+          Customize Now
         </button>
+
+      </div>
+
+      <div class="hero-stats">
+
+        <div class="stat-card">
+          <h3>10K+</h3>
+          <p>Happy Customers</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>4.9★</h3>
+          <p>Premium Reviews</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>HD</h3>
+          <p>Gloss Finish</p>
+        </div>
 
       </div>
 
@@ -122,12 +141,13 @@
 
     <div class="hero-image">
 
-      <div class="glass-card">
+      <div class="hero-ring"></div>
+
+      <div class="glass-card floating-card">
 
         <img
-          src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop"
-          alt="gift"
-        >
+          src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop"
+          alt="Premium Acrylic Gift">
 
       </div>
 
@@ -142,24 +162,20 @@
 
     <div class="section-title">
 
-      <h2>
-        Popular Categories
-      </h2>
-
-      <p>
-        Premium gifting collections
+      <p class="section-small">
+        SHOP BY CATEGORY
       </p>
+
+      <h2>
+        Popular Collections
+      </h2>
 
     </div>
 
     <div class="categories">
 
       <div class="category-card">
-        <h3>Anime Posters</h3>
-      </div>
-
-      <div class="category-card">
-        <h3>God Frames</h3>
+        <h3>Anime Acrylics</h3>
       </div>
 
       <div class="category-card">
@@ -167,7 +183,19 @@
       </div>
 
       <div class="category-card">
-        <h3>Music Plaques</h3>
+        <h3>Music Posters</h3>
+      </div>
+
+      <div class="category-card">
+        <h3>God Frames</h3>
+      </div>
+
+      <div class="category-card">
+        <h3>Name Art</h3>
+      </div>
+
+      <div class="category-card">
+        <h3>Birthday Gifts</h3>
       </div>
 
     </div>
@@ -181,90 +209,76 @@
 
     <div class="section-title">
 
-      <h2>
-        Featured Products
-      </h2>
-
-      <p>
-        Luxury acrylic creations
+      <p class="section-small">
+        BEST SELLERS
       </p>
+
+      <h2>
+        Luxury Acrylic Collection
+      </h2>
 
     </div>
 
     <div class="products">
 
-      <!-- PRODUCT -->
-
       <div class="product-card">
 
-        <img
-          src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop"
-          alt="product"
-        >
+        <div class="product-image">
+
+          <span class="product-badge">
+            Bestseller
+          </span>
+
+          <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop"
+            alt="product">
+
+        </div>
 
         <div class="product-info">
 
           <h3>
-            Anime Acrylic Frame
+            Couple Acrylic Frame
           </h3>
 
-          <p class="price">
-            ₹499
+          <p class="product-desc">
+            Premium HD glossy acrylic couple memory frame.
           </p>
 
-          <button
-            class="add-cart"
-            data-name="Anime Acrylic Frame"
-            data-price="499">
+          <div class="product-bottom">
 
-            Add To Cart
+            <p class="price">
+              ₹699
+            </p>
 
-          </button>
+            <button
+              class="add-cart"
+              data-name="Couple Acrylic Frame"
+              data-price="699">
+
+              Add To Cart
+
+            </button>
+
+          </div>
 
         </div>
 
       </div>
 
-      <!-- PRODUCT -->
-
       <div class="product-card">
 
-        <img
-          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop"
-          alt="product"
-        >
+        <div class="product-image">
 
-        <div class="product-info">
+          <span class="product-badge">
+            Trending
+          </span>
 
-          <h3>
-            Couple Acrylic Gift
-          </h3>
-
-          <p class="price">
-            ₹699
-          </p>
-
-          <button
-            class="add-cart"
-            data-name="Couple Acrylic Gift"
-            data-price="699">
-
-            Add To Cart
-
-          </button>
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
+            alt="product">
 
         </div>
-
-      </div>
-
-      <!-- PRODUCT -->
-
-      <div class="product-card">
-
-        <img
-          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
-          alt="product"
-        >
 
         <div class="product-info">
 
@@ -272,18 +286,71 @@
             Music Poster Plaque
           </h3>
 
-          <p class="price">
-            ₹599
+          <p class="product-desc">
+            Spotify inspired premium acrylic plaque gift.
           </p>
 
-          <button
-            class="add-cart"
-            data-name="Music Poster Plaque"
-            data-price="599">
+          <div class="product-bottom">
 
-            Add To Cart
+            <p class="price">
+              ₹599
+            </p>
 
-          </button>
+            <button
+              class="add-cart"
+              data-name="Music Poster Plaque"
+              data-price="599">
+
+              Add To Cart
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <span class="product-badge">
+            Premium
+          </span>
+
+          <img
+            src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop"
+            alt="product">
+
+        </div>
+
+        <div class="product-info">
+
+          <h3>
+            Anime Acrylic Poster
+          </h3>
+
+          <p class="product-desc">
+            Waterproof HD anime wall acrylic collection.
+          </p>
+
+          <div class="product-bottom">
+
+            <p class="price">
+              ₹499
+            </p>
+
+            <button
+              class="add-cart"
+              data-name="Anime Acrylic Poster"
+              data-price="499">
+
+              Add To Cart
+
+            </button>
+
+          </div>
 
         </div>
 
@@ -293,20 +360,62 @@
 
   </section>
 
-  <!-- CUSTOM FORM -->
+  <!-- WHY US -->
+
+  <section class="section why-section">
+
+    <div class="section-title">
+
+      <p class="section-small">
+        WHY NIRVA
+      </p>
+
+      <h2>
+        Premium Quality Experience
+      </h2>
+
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <h3>✨ HD Gloss Finish</h3>
+        <p>Luxury premium printing with ultra sharp colors.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>💧 Waterproof</h3>
+        <p>Durable acrylic material built for long-lasting shine.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>📦 Safe Packaging</h3>
+        <p>Scratch-proof secure packaging for safe delivery.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>⚡ Fast Delivery</h3>
+        <p>Quick production and delivery all over India.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CUSTOMIZATION -->
 
   <section class="section"
            id="custom">
 
     <div class="section-title">
 
-      <h2>
-        Create Custom Gift
-      </h2>
-
-      <p>
-        Upload memories and personalize gifts
+      <p class="section-small">
+        CUSTOMIZE YOUR GIFT
       </p>
+
+      <h2>
+        Create Your Premium Gift
+      </h2>
 
     </div>
 
@@ -317,36 +426,23 @@
         <input
           type="text"
           placeholder="Your Name"
-          required
-        >
+          required>
 
         <input
           type="text"
-          placeholder="Occasion"
-        >
+          placeholder="Occasion">
 
         <input type="date">
 
         <textarea
-          placeholder="Your Message"></textarea>
+          placeholder="Special Message"></textarea>
 
         <select>
 
-          <option>
-            Select Size
-          </option>
-
-          <option>
-            A4
-          </option>
-
-          <option>
-            8x10
-          </option>
-
-          <option>
-            12x18
-          </option>
+          <option>Select Size</option>
+          <option>A4</option>
+          <option>8x10</option>
+          <option>12x18</option>
 
         </select>
 
@@ -354,7 +450,7 @@
 
         <button
           type="submit"
-          class="gold-btn">
+          class="gold-btn full-btn">
 
           Submit Custom Order
 
@@ -366,7 +462,7 @@
 
   </section>
 
-  <!-- CART SIDEBAR -->
+  <!-- CART -->
 
   <div class="cart-sidebar"
        id="cartSidebar">
@@ -425,10 +521,8 @@
 
   </footer>
 
-  <!-- JS -->
-
   <script src="js/main.js"></script>
   <script src="js/cart.js"></script>
 
 </body>
-  </html>
+</html>
