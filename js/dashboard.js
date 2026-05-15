@@ -1,1 +1,52 @@
+/* CHECK LOGIN */
 
+const isLoggedIn =
+  localStorage.getItem(
+    "isLoggedIn"
+  );
+
+if(!isLoggedIn){
+
+  window.location.href =
+    "login.html";
+
+}
+
+/* GET USER */
+
+const savedUser =
+  JSON.parse(
+    localStorage.getItem(
+      "nirvaUser"
+    )
+  );
+
+/* SHOW NAME */
+
+const userName =
+  document.getElementById(
+    "userName"
+  );
+
+userName.innerText =
+  savedUser.name;
+
+/* LOGOUT */
+
+const logoutBtn =
+  document.getElementById(
+    "logoutBtn"
+  );
+
+logoutBtn.addEventListener(
+  "click",
+  () => {
+
+    localStorage.removeItem(
+      "isLoggedIn"
+    );
+
+    window.location.href =
+      "login.html";
+
+});
