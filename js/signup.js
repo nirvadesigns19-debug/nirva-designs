@@ -1,43 +1,69 @@
+import { auth }
+from "./firebase.js";
+
+import {
+  createUserWithEmailAndPassword
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
 const signupForm =
-  document.getElementById("signupForm");
+  document.getElementById(
+    "signupForm"
+  );
+
 
 signupForm.addEventListener(
   "submit",
-  function(e){
+  async (e) => {
 
     e.preventDefault();
 
     const name =
       document.getElementById(
-        "signupName"
+        "name"
       ).value;
 
     const email =
       document.getElementById(
-        "signupEmail"
+        "email"
       ).value;
 
     const password =
       document.getElementById(
-        "signupPassword"
+        "password"
       ).value;
 
-    const user = {
-      name,
-      email,
-      password
-    };
+    try{
 
-    localStorage.setItem(
-      "nirvaUser",
-      JSON.stringify(user)
-    );
+      const userCredential =
+        await createUserWithEmailAndPassword(
+          auth,
+          email,
+          password
+        );
 
-    alert(
-      "Account created successfully!"
-    );
+      localStorage.setItem(
+        "nirvaUser",
+        JSON.stringify({
+          name,
+          email
+        })
+      );
 
-    window.location.href =
-      "login.html";
+      alert(
+        "Account created successfully!"
+      );
+
+      window.location.href =
+        "login.html";
+
+    }
+
+    catch(error){
+
+      alert(error.message);
+
+    }
 
 });
