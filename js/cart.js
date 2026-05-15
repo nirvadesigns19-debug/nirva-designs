@@ -167,3 +167,29 @@ function removeItem(index){
 }
 
 renderCart();
+
+
+/*Chaeckout */
+const checkoutBtn =
+  document.querySelector(
+    ".checkout-btn"
+  );
+
+checkoutBtn.addEventListener(
+  "click",
+  () => {
+
+    if(cart.length === 0){
+
+      alert(
+        "Your cart is empty"
+      );
+
+      return;
+
+    }
+
+    window.location.href =
+      "checkout.html";
+
+});
