@@ -1,46 +1,42 @@
+import { auth }
+from "./firebase.js";
+
+import {
+  signInWithEmailAndPassword
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+
 const loginForm =
-  document.getElementById("loginForm");
+  document.getElementById(
+    "loginForm"
+  );
+
 
 loginForm.addEventListener(
   "submit",
-  function(e){
+  async (e) => {
 
     e.preventDefault();
 
     const email =
-      document.querySelector(
-        'input[type="email"]'
+      document.getElementById(
+        "loginEmail"
       ).value;
 
     const password =
-      document.querySelector(
-        'input[type="password"]'
+      document.getElementById(
+        "loginPassword"
       ).value;
 
-    const savedUser =
-      JSON.parse(
-        localStorage.getItem(
-          "nirvaUser"
-        )
-      );
+    try{
 
-    /* CHECK ACCOUNT */
-
-    if(!savedUser){
-
-      alert(
-        "No account found!"
-      );
-
-      return;
-    }
-
-    /* VALIDATE LOGIN */
-
-    if(
-      email === savedUser.email &&
-      password === savedUser.password
-    ){
+      const userCredential =
+        await signInWithEmailAndPassword(
+          auth,
+          email,
+          password
+        );
 
       localStorage.setItem(
         "isLoggedIn",
@@ -54,11 +50,13 @@ loginForm.addEventListener(
       window.location.href =
         "dashboard.html";
 
-    } else {
+    }
 
-      alert(
-        "Invalid email or password"
-      );
+    catch(error){
+
+      alert(error.message);
+
+      console.log(error);
 
     }
 
