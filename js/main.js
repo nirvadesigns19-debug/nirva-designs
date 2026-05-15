@@ -1,4 +1,4 @@
-/* CHECK LOGIN */
+/* LOGIN CHECK */
 
 const isLoggedIn =
   localStorage.getItem(
@@ -12,7 +12,7 @@ if(!isLoggedIn){
 
 }
 
-/* SHOW USER */
+/* USER */
 
 const savedUser =
   JSON.parse(
@@ -27,7 +27,10 @@ const navUser =
   );
 
 if(savedUser){
-  navUser.innerText = savedUser.name;
+
+  navUser.innerText =
+    savedUser.name;
+
 }
 
 /* LOGOUT */
@@ -63,10 +66,39 @@ giftForm.addEventListener(
 
     e.preventDefault();
 
-    alert(
-      "Custom order submitted successfully!"
+    showToast(
+      "✨ Custom order submitted successfully"
     );
 
     giftForm.reset();
 
 });
+
+/* TOAST */
+
+function showToast(message){
+
+  const toast =
+    document.createElement("div");
+
+  toast.classList.add(
+    "toast"
+  );
+
+  toast.innerText = message;
+
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+
+    toast.classList.add("show");
+
+  },100);
+
+  setTimeout(() => {
+
+    toast.remove();
+
+  },3000);
+
+    }
