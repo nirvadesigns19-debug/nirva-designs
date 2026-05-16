@@ -1,10 +1,11 @@
-function App() {
+export default function App() {
   return (
     <div
       style={{
-        background: "#000",
+        width: "100%",
+        height: "100vh",
+        backgroundColor: "black",
         color: "#D4AF37",
-        minHeight: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -16,5 +17,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
