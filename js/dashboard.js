@@ -55,3 +55,12 @@ logoutBtn.addEventListener(
       "login.html";
 
 });
+
+
+onAuthStateChanged(auth, (user) => {
+  if (!user) {
+    window.location.href = "login.html";
+  } else {
+    console.log("User logged in:", user.email);
+  }
+});
